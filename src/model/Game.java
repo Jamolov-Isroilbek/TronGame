@@ -10,7 +10,7 @@ import persistence.Database;
 /**
  * The Game class represents the game state.
  *
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public final class Game {
 

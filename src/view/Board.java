@@ -14,7 +14,7 @@ import model.Trail;
  * The Board class represents the game board where the game is displayed.
  * It updates and renders the game components.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Board extends JPanel {
     private final Game game;

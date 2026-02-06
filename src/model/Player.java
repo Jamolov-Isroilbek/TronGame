@@ -7,7 +7,7 @@ import model.Motorcycle.Direction;
 /**
  * The Player class represents a player in the game.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Player {
     private final String name;

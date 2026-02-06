@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * The Motorcycle class represents a player's motorcycle.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Motorcycle {
 

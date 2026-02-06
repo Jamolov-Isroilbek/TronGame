@@ -26,7 +26,7 @@ import persistence.Database;
  * It displays the game board and handles user input.
  * It also provides a menu for accessing the leader-board and restarting the game.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class MainWindow extends JFrame {
 
@@ -181,5 +181,3 @@ public class MainWindow extends JFrame {
         new MainWindow();
     }
 }
-
-

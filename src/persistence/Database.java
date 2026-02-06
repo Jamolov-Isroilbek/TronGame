@@ -15,7 +15,7 @@ import model.Player;
 /**
  * The Database class handles interactions with the game's database.
  *
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Database {
 

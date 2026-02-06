@@ -5,7 +5,7 @@ import java.awt.Dimension;
 /**
  * The Level class represents a game level.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Level {
     private final int speed;

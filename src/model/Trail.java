@@ -7,7 +7,7 @@ import java.awt.Point;
 /**
  * The Trail class represents a trail left by a motorcycle.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class Trail {
     private final Point position;

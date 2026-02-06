@@ -7,7 +7,7 @@ import model.Motorcycle;
 /**
  * The InputHandler class handles keyboard input for player control.
  * 
- * @author Isroilbek Jamolov DXFV5Y
+ * @author Isroilbek Jamolov
  */
 public class InputHandler extends KeyAdapter {
 
