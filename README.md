@@ -54,6 +54,7 @@ tron-game/
 │   └── view/
 │       ├── Board.java
 │       └── MainWindow.java
+├── db.properties.example
 ├── mysql-connector-j-x.x.x.jar
 └── README.md
 ```
@@ -79,7 +80,18 @@ CREATE TABLE leader_board (
 );
 ```
 
-2. Update database credentials in `Database.java` if needed.
+2. Configure database credentials:
+```bash
+cp db.properties.example db.properties
+```
+
+3. Edit `db.properties` with your MySQL credentials:
+```properties
+db.user=your_username
+db.password=your_password
+```
+
+> **Note:** `db.properties` is gitignored to prevent committing credentials.
 
 ### Running the Game
 
