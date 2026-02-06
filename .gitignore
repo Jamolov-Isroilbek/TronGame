@@ -1,0 +1,16 @@
+# compiled output
+/out/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+
+# secrets
+db.properties
+
+# logs
+*.log

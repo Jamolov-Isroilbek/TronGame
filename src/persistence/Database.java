@@ -1,10 +1,13 @@
 package persistence;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.util.ArrayList;
 import java.util.List;
 import model.Player;
@@ -18,14 +21,30 @@ public class Database {
 
     private final String TABLE_NAME = "leader_board";
     private final Connection conn;
-    private final String URL = "jdbc:mysql://localhost/tron_game?serverTimezone=UTC&user=root";
 
     public Database() {
         Connection c = null;
+        
         try {
+            Properties props = new Properties();
+            props.load(new FileInputStream("../../db.properties"));
+
+            String host = props.getProperty("db.host");
+            String port = props.getProperty("db.port");
+            String dbName = props.getProperty("db.name");
+            String user = props.getProperty("db.user");
+            String password = props.getProperty("db.password");
+
+            String url =
+                "jdbc:mysql://" + host + ":" + port + "/" + dbName +
+                "?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
+
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection(URL);
-        } catch (ClassNotFoundException | SQLException ex) {
+            c = DriverManager.getConnection(url, user, password);
+
+            System.out.println("Database connection established");
+
+        } catch (ClassNotFoundException | SQLException | IOException ex) {
             System.out.println("No connection");
             ex.printStackTrace();
         }
